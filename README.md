@@ -35,6 +35,25 @@ python data_transformer.py
 ```
 
 ### 5. Configurando o Banco de Dados
+<details>
+  <summary>💡 Talvez seja necessário setar o local_infile globalmente, siga as instruções caso necessário:</summary><br/>
+
+  * No terminal, conecte-se ao MySQL como root:
+  ```
+  mysql -u root -p
+  ```
+  * Depois, rode este comando para ativar a opção no servidor:
+  ```
+  SET GLOBAL local_infile = 1;
+  ```
+  * Verifique se está ativado:
+  ```
+  SHOW VARIABLES LIKE 'local_infile';
+  ```
+  * Se retornar ON, então está ativado.
+</details><br/>
+
+
 Acessando o terminal MySQL
 ```
 mysql -u root -p --local-infile=1
@@ -45,6 +64,11 @@ mysql -u root -p --local-infile=1
 SOURCE db.sql;
 SOURCE queries.sql;
 ```
+
+### 5. Acessar a coleção do Postman
+Abra os links para acessar a coleção do Postman: <br/>
+* [Para acessar a busca com o nome "medicina"](http://127.0.0.1:8000/buscar?nome=medicina)
+* [Para acessar a busca com o nome "beneficios"](http://127.0.0.1:8000/buscar?nome=beneficios)
 
 ## 💻 Configuração do Frontend
 Abra o terminal integrado da pasta frontend e execute os seguintes comandos:
