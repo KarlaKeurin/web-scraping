@@ -2,6 +2,7 @@
 Este repositório contém um projeto de Web Scraping. Siga os passos abaixo para rodá-lo em sua máquina. 🚀
 
 ## ⚙️ Configurações do Backend
+Todos os passos da configuração do backend precisam ser rodados dentro do terminal integrado da pasta backend.
 
 ### 1. Criando e ativando o ambiente virtual
 ```
@@ -20,6 +21,8 @@ Após instalar as dependências, inicie o servidor executando:
 uvicorn main:app --reload
 ```
 
+❗ Abra outro terminal integrado da pasta backend e faça os passos anteriores novamente.
+
 ### 4. Executando os desafios
 🔍 Desafio 1 - Teste de Web Scraping
 ```
@@ -35,11 +38,6 @@ python data_transformer.py
 Acessando o terminal MySQL
 ```
 mysql -u root -p --local-infile=1
-```
-
-Dentro do terminal MySQL, selecione o banco de dados
-```
-USE db_intuitive_care;
 ```
 
 💾 Desafio 3 - Teste de Banco de Dados
