@@ -1,4 +1,4 @@
--- Consultas para obter os 10 maiores valores de despesa por operadora no último trimestre
+-- Consultas para obter os 10 maiores valores de despesa por operadora no último trimestre 
 WITH ultimo_trimestre AS (
     SELECT 
         MAX(data) AS ultima_data
