@@ -1,0 +1,72 @@
+{
+	"info": {
+		"_postman_id": "344f8cbe-0bdf-479e-8d50-f1c97de80064",
+		"name": "intuitive-care",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "36466360"
+	},
+	"item": [
+		{
+			"name": "New Request",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:8000/buscar?nome=medicina",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"buscar"
+					],
+					"query": [
+						{
+							"key": "nome",
+							"value": "medicina"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "New Request",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:8000/buscar?nome=beneficios",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"buscar"
+					],
+					"query": [
+						{
+							"key": "nome",
+							"value": "beneficios"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
