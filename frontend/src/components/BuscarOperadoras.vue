@@ -21,7 +21,15 @@
         </thead>
         <tbody>
           <tr v-for="operadora in resultados" :key="operadora['Registro_ANS']">
-            <td>{{ operadora["Nome_Fantasia"] }}</td>
+            <td>
+              {{
+                operadora["Nome_Fantasia"] &&
+                operadora["Nome_Fantasia"].toLowerCase() !== "nan" &&
+                operadora["Nome_Fantasia"].trim() !== ""
+                  ? operadora["Nome_Fantasia"]
+                  : operadora["Razao_Social"]
+              }}
+            </td>
             <td>
               {{ operadora["Logradouro"] }} - {{ operadora["Numero"] }},
               {{ operadora["Bairro"] }}, {{ operadora["Cidade"] }} -
